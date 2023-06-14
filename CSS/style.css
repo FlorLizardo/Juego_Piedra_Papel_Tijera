@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Concert One', cursive;
+}
+
+:root {
+    --clr-yellow-color: #F7DC6F;
+    --clr-beige-color: #FDEBD0;
+    --clr-violet-color: #5B2C6F;
+}
+
+body {
+    background-color: var(--clr-violet-color);
+    color: var(--clr-beige-color);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--clr-beige-color);
+    color: var(--clr-violet-color);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.instructions {
+    margin-bottom: 2rem;
+}
+
+.marcador {
+    background-color: var(--clr-yellow-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--clr-violet-color);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.marcador .nombre {
+    position: absolute;
+    color: var(--clr-beige-color);
+    background-color: var(--clr-violet-color);
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--clr-yellow-color);
+}
+
+.marcador .nombre-jugador {
+    right: 85%;
+}
+
+.marcador .nombre-computadora {
+    left: 85%;
+}
+
+.marcador .puntos {
+    font-size: 1.6rem;
+}
+
+.elegi-tu-arma {
+    margin-bottom: 2rem;
+}
+
+.elegi-tu-arma h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.armas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arma {
+    font-size: 2rem;
+    background-color: var(--clr-beige-color);
+    border: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.mensaje .eleccion {
+    color: var(--clr-violet-color);
+    background-color: var(--clr-yellow-color);
+    border-radius: .25rem;
+    padding-inline: .25rem;
+}
+
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: var(--clr-beige-color);
+    color: var(--clr-violet-color);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.disabled {
+    display: none;
+}
